@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+:root{
+  --primer: #ededed;
+  --sekunder: #111111;
+  --tersier: #ffcd29;
+}
+
+body {
+  background: var(--sekunder);
+  font: var(--primer);
+}
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background: whitesmoke;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10%;
+  align-items: center;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.logo{
+  font-size: 25px;
+  font-style: oblique;
+  color: var(--sekunder);
+  font-weight: 600;
+}
+
+.navbar ul{
+  display: flex;
+  padding-top: 10px;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a{
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--sekunder);
+  cursor: pointer;
+  padding: 0 0 0 10px;
+}
+.navbar a:hover,
+.navbar a.active{
+  transition: .6s;
+  color: var(--tersier);
+}
+
+.beranda-content{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.beranda-content .one h1{
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+.beranda-content .one p{
+  font-size: 16px;
+  color: white;
+  margin: 10px 0 20px 0;
+}
+.beranda-content .btn-box a{
+  color: white;
+  background-color: #ffcd29;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.beranda-content .btn-box a:hover{
+  background-color: var(--primer);
+  color: black;
+}
+.beranda-content .two img{
+  width: 100%;
+  border-radius: 10px;
+}
+.beranda-content .sosmed i{
+  margin: 8% 10px 0 0;
+  font-size: 25px;
+  color: white;
+}
+.beranda-content .sosmed i:hover{
+  color: var(--tersier);
+  transition: all .6s;
+}
+/* Tentang */
+#tentang .tentang-content{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin: 0 0 10% 0;
+  color: white;
+  font-style: italic;
+}
+
+/* Footer */
+.footer .container p{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: var(--tersier);
+  padding: 5% 5%;
+  color: white;
+  font-size: 18px;
+}
