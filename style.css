@@ -79,6 +79,11 @@ body {
   color: white;
   margin: 10px 0 20px 0;
 }
+.beranda-content .one span{
+  color: var(--primer);
+  font-size: 2rem;
+  font-style: oblique;
+}
 .beranda-content .btn-box a{
   color: white;
   background-color: #ffcd29;
